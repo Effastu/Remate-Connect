@@ -1,3 +1,3 @@
 # Remate-Connect
-
-Proyecto bajo la metodologia XP para el curso Metodologias para SI
+Equipo 4
+Proyecto bajo la metodología XP para el curso MDSI.
