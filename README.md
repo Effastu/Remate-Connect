@@ -4,4 +4,4 @@ Equipo 4: Carlos Alfonso Álvarez Hernández, Hernán Darío Flórez Martínez, 
 
 Metodología ágil usada: XP 
 
-Asignatura: MDSI - 2022-2...
+Asignatura: MDSI - 2022-2!!!
