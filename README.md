@@ -1,3 +1,3 @@
-# Remate-Connect
+# Proyecto: Remate-Connect
 Equipo 4 - 
-Proyecto bajo la metodología XP para el curso MDSI.
+Metodología usada: XP para el curso MDSI.
