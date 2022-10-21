@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remate Connect</title>
     <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
 </head>
 <body>
 <!--Código del encabezado donde se encuentra el logo la barra de nav 
@@ -40,48 +41,63 @@
             </div>
         </section>
     </header>
-    <div id="left"> </div>
+    
 
 
 <!-- Código de formulario de venta y imagen del producto seleccionado
  -->
-    <section class="contenedor-compra">
-        <div id="encabezado-compra">
-            <h2>Compra de artículo</h2>        
+    <div class="contenedor-pag">
+
+        <div id="left"> </div>
+        <section class="contenedor-compra">
+            <div id="encabezado-compra">
+                <h2>Compra de artículo</h2>        
+            </div>
+            <form class="frm-compra" action="">
+                <div class="entrada-compra">
+                    <div id="div-lbl-compra">
+                        <label class="lbl-com-ven" for="id-art-comprar">Id articulo:</label>
+                        <label class="lbl-com-ven" for="nombre-art-comprar">Nombre:</label>
+                        <label class="lbl-com-ven" for="categoria-art-comprar">Categoría:</label>
+                        <label class="lbl-com-ven" for="marca-art-comprar">Marca:</label>
+                        <label class="lbl-com-ven" for="valor-base-art-comprar">Valor base:</label>
+                        <label class="lbl-com-ven" for="valor-mayor-art-comprar">Mayor valor ofertado:</label>
+                        <label class="lbl-com-ven" for="vigencia-art-comprar">Vigencia del remate:</label>
+                        <label class="lbl-com-ven" for="oferta-art-comprar">Ofertar valor:</label>
+
+                    </div>
+
+    <!-- Son label, solo se mostrara información no reciben datos de entrada 
+    de los usuarios
+    -->            <div id="div-input-compra">
+                        <input class="input-com-ven" type="text" id="id-art-comprar">
+                        <label class="input-com-ven" id="nombre-art-comprar"></label>
+                        <label class="input-com-ven" id="categoria-art-comprar"></label>  
+                        <label class="input-com-ven" id="marca-art-comprar"></label>
+                        <label class="input-com-ven" id="valor-base-art-comprar"></label>
+                        <label class="input-com-ven" id="valor-mayor-art-comprar"></label>
+                        <label class="input-com-ven" id="vigencia-art-comprar"></label>
+                        <input class="input-com-ven" type="text" name="" id="oferta-art-comprar">
+                    </div>
+                </div>
+                <div id="div-botones-compra">
+                    <button id="btn-confirmar-com" class="estilo-botones" type="button" >Confirmar</button>
+                    <button id="btn-cancelar-com" class="estilo-botones" type="button">Cancelar</button>
+                </div>
+            </form>
+        </section>
+        <div id="prod-compra">
+            <div id="cont-prod-com" class="tarjeta-compra">
+                <figure>
+                    <img src="./imagenes/Teatro.PNG">
+                </figure>
+                <div class="contenido-tarjeta">
+                    <h3>Teatro en casa</h3>
+                    <p>Características y especificaciones del producto</p>
+                </div> 
+            </div>
         </div>
-        <form class="frm-compra" action="">
-            <div class="entrada-compra">
-                <div id="div-lbl-compra">
-                    <label class="lbl-com-ven" for="id-art-comprar">Id articulo:</label>
-                    <label class="lbl-com-ven" for="nombre-art-comprar">Nombre:</label>
-                    <label class="lbl-com-ven" for="categoria-art-comprar">Categoría:</label>
-                    <label class="lbl-com-ven" for="marca-art-comprar">Marca:</label>
-                    <label class="lbl-com-ven" for="valor-base-art-comprar">Valor base:</label>
-                    <label class="lbl-com-ven" for="valor-mayor-art-comprar">Mayor valor ofertado:</label>
-                    <label class="lbl-com-ven" for="vigencia-art-comprar">Vigencia del remate:</label>
-                    <label class="lbl-com-ven" for="oferta-art-comprar">Ofertar valor:</label>
-
-                </div>
-
-<!-- Son label, solo se mostrara información no reciben datos de entrada 
-de los usuarios
- -->            <div id="div-input-compra">
-                    <input class="input-com-ven" type="text" id="id-art-comprar">
-                    <label class="input-com-ven" id="nombre-art-comprar"></label>
-                    <label class="input-com-ven" id="categoria-art-comprar"></label>  
-                    <label class="input-com-ven" id="marca-art-comprar"></label>
-                    <label class="input-com-ven" id="valor-base-art-comprar"></label>
-                    <label class="input-com-ven" id="valor-mayor-art-comprar"></label>
-                    <label class="input-com-ven" id="vigencia-art-comprar"></label>
-                    <input class="input-com-ven" type="text" name="" id="oferta-art-comprar">
-                </div>
-            </div>
-            <div id="div-botones-compra">
-                <button id="btn-confirmar-com" class="estilo-botones" type="button" >Confirmar</button>
-                <button id="btn-cancelar-com" class="estilo-botones" type="button">Cancelar</button>
-            </div>
-        </form>
-    </section>
+    </div>
 
     
 </body>

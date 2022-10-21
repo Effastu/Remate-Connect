@@ -304,7 +304,7 @@ a:hover{
     margin-top: 120px;;
 }
 #descripcion-art{
-    height: 100px;
+    height: 80px;
 }
 .iniciar-registrar div{
 text-align: center;
@@ -314,6 +314,9 @@ text-align: center;
 }
 
 /*---------------------------- Estilos pag compra---------------------------- */
+.contenedor-pag{
+    display: flex;
+}
 .contenedor-compra{
     width: 100%;
     font-family: Vegur, 'PT Sans', Verdana, sans-serif;
@@ -326,7 +329,7 @@ text-align: center;
     margin: 3% 0 3% 0;
 }
 #encabezado-compra h2{
-    margin: 0;
+    margin-left: 244px;
     color: #FB9341;
 }
 #div-lbl-compra{
@@ -342,17 +345,25 @@ text-align: center;
 }
 .entrada-compra{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 45%;
     column-gap: 10px;
 }
-
 
 #div-botones-compra{
     display: flex;
     justify-content: center;
     column-gap: 20px;
-    margin-top: 38px;
+    margin-top: 50px;
+    margin-left: 240px;
 }
+#cont-prod-com{
+    width: 70%;
+    height: 282px;
+    background:white;
+ }
+ #prod-compra{
+    width: 35%;
+ }
 
 /* Esta clase representa elementos de la caja derecha header */
  
@@ -432,6 +443,34 @@ text-align: center;
 	background: #FB9341;
 	color: #fff;
 }
+.tarjeta-compra{
+    width: 100%;
+    margin-top: 27%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
+    cursor: default;
+}
+.tarjeta-compra img{
+	width: 100%;
+	height: 100px;
+}
+.tarjeta-compra .contenido-tarjeta{
+	padding: 15px;
+	text-align: center;
+}
+.tarjeta-compra .contenido-tarjeta h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.tarjeta-compra .contenido-tarjeta p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
 @media only screen and (min-width:320px) and (max-width:768px){
 	.contenedor-tarjeta{
 		flex-wrap: wrap;
