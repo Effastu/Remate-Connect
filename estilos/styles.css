@@ -84,8 +84,8 @@ a:hover{
  */
  .estilo-botones{
     width: 100px;
-    height: 25px;
-    border-radius: 5px;
+    height: 30px;
+    border-radius: 10px;
     background: linear-gradient(180deg, #FB9341, transparent);
 }
 .estilo-botones:hover{
@@ -107,6 +107,7 @@ a:hover{
     height: 360px;
     background: white;
     border: 1px solid black;
+    border-radius: 10px;
     font-family: Vegur, 'PT Sans', Verdana, sans-serif;
     font-size: 14px;
     font-weight: bolder;/* Ojo posicionamiento */
@@ -212,6 +213,7 @@ a:hover{
     height: 480px;
     background: white;
     border: 1px solid black;
+    border-radius: 10px;
     font-family: Vegur, 'PT Sans', Verdana, sans-serif;
     font-size: 14px;
     font-weight: bolder;/* Ojo posicionamiento */
