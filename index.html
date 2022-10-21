@@ -39,16 +39,16 @@
         </section>
 
     </header>
-    
-    <section class="contenedor-login">
+    <div id="left"> </div>
+    <section class="contenedor-login" id="cont-login">
         <div id="encabezado-login">
                 <div class="contenedor-logo-modal">
                     <img class="logo" src="./imagenes/logo.png" alt="">
                 </div>
-                <div id="txt-login">
+                <div class="txt-login">
                     <p>¡COMPRAR Y VENDER TODO ONLINE!</p>
                 </div>
-                <div id="border-double"></div>
+                <div class="border-double"></div>
         </div>
         <form class="frm-login" action="">
             <div class="entrada">
@@ -64,8 +64,8 @@
                 </div>
             </div>
             <div id="div-botones-login">
-                <button id="btn-acceder" class="estilo-botones" type="submit">Acceder</button>
-                <button id="btn-salir" class="estilo-botones" type="submit">Salir</button>
+                <button id="btn-acceder-log" class="estilo-botones" type="button">Acceder</button>
+                <button id="btn-salir-log" class="estilo-botones" type="button">Salir</button>
 
             </div>
             <div id="div-olvido-contraseña">
@@ -73,6 +73,82 @@
             </div>
         </form>
     </section>
+
+<!-- modal para registrar usuario, se usa la abreviación reg para 
+    identificarlo
+ -->   
+    <section class="contenedor-reg" id="cont-reg">
+        <div id="encabezado-reg">
+                <div class="contenedor-logo-modal">
+                    <img class="logo" src="./imagenes/logo.png" alt="">
+                </div>
+                <div class="txt-login">
+                    <p>¡INGRESA TUS DATOS YA! 👇👇👇</p>
+                </div>
+                <div class="border-double"></div>
+        </div>
+        <form action="">
+            <div class="entrada">
+                <div id="div-lbl-reg">
+                    <label class="lbl-login" for="reg-usuario">Usuario:</label>
+                    <label class="lbl-login" for="reg-contraseña">Contraseña:</label>
+                    <label class="lbl-login" for="reg-contraseña-verfic">Contraseña otra vez:</label>
+                    <label class="lbl-login" for="reg-nombre">Nombre :</label>
+                    <label class="lbl-login" for="reg-apellidos">Apellidos:</label>              
+                </div>
+                <div id="div-input-reg">
+                    <input id="reg-usuario"class="input-login" type="text" placeholder="E-mail">
+                    <input id="reg-contraseña" class="input-login" type="text" placeholder="Contraseña">
+                    <input id="reg-contraseña-verfic" class="input-login" type="text" placeholder="Contraseña">
+                    <input id="reg-nombre" class="input-login" type="text" placeholder="Nombre">
+                    <input id="reg-apellidos" class="input-login" type="text" placeholder="Apellidos">
+                </div>
+            </div>
+            <div id="div-botones-login">
+                <button id="btn-reg" class="estilo-botones" type="button">Registrar</button>
+                <button id="btn-salir-reg" class="estilo-botones" type="button">Salir</button>
+            </div>
+            <div id="div-olvido-contraseña">
+                <p>Bienvenido</p>
+            </div>
+        </form>
+    </section>
+<!-- Producto que se mostrarán en la interfaz-->
+
+    <section class="contenedor-tarjeta" id="cont-tar" >
+	
+        <div class="tarjeta">
+            <figure>
+                <img src="./imagenes/Tv.PNG">
+            </figure>
+            <div class="contenido-tarjeta">
+                <h3>Televisor</h3>
+                <p>Características y especificaciones del producto</p>
+                <a href="#">Ofertar</a>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <figure>
+                <img src="./imagenes/MiniComp.PNG">
+            </figure>
+            <div class="contenido-tarjeta">
+                <h3>Mini componente</h3>
+                <p>Características y especificaciones del producto</p>
+                <a href="#">Ofertar</a>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <figure>
+                <img src="./imagenes/Teatro.PNG">
+            </figure>
+            <div class="contenido-tarjeta">
+                <h3>Teatro en casa</h3>
+                <p>Características y especificaciones del producto</p>
+                <a href="#">Ofertar</a>
+            </div>           
+        </div>
+    </section>
+
     <script src="./archivos js/remate.js"></script> 
 </body>
 </html>
