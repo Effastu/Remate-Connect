@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
+    <title>Remate Connect</title>
+</head>
+<body>
+    <header class="encabezado">
+        <section class=".contenedor-logo-header" >
+            <img  class="logo" src="./imagenes/logo.png" alt="">
+        </section>
+
+        <section class="navegar-busqueda">
+            <div class="barra-busqueda">  
+                <button id="btn-buscar">🔍Search</button>
+                <input id="input-buscar" type="text" name="buscar-prod" id="buscar"> 
+            </div>
+
+<!-- contenedor btn-nav contiene el menu y un boton responsive de menu -->
+
+            <div class="btn-nav"> 
+                <label for="check-menu" class="lbl-btn-nav">
+                    <img src="./estilos/menu.svg" alt="">
+                </label>
+                <input type="checkbox" class="check-btn-menu" id="check-menu">
+                <nav class="barra-nav"> 
+                    <ul class="list-nav">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./vender.html">Vender</a></li>
+                        <li><a href="./comprar.html">Comprar</a></li>
+                        <div>
+                            <li><a href="./misCompras.html">Mis compras</a></li>
+                            <img src="./imagenes/carrito-de-compras.png" alt="icon carrito" class="icon-carrito">
+                        </div>
+                    </ul>  
+                </nav>
+    
+            </div>
+
+        </section>
+
+        <section class="iniciar-registrar" >
+            <ul id="list-sesion">
+                <li id="li-iniciar-sesion"><a href="#">Iniciar sesión</a></li>
+                <li id="li-crear-cuenta"><a href="#">Crear tu cuenta</a></li>
+            </ul>
+        </section>
+
+    </header>
+    
+  
+<!-- Producto que se mostrarán en la interfaz-->
+    <section class="contenedor-pag">
+        <div id="left"> 
+        </div>
+
+        <div id="cont-pago">
+            <div id="encabezado-mis-comp">
+                <h2>Realizar pago</h2>
+            </div >
+
+            <div id="id-comp-fecha">
+                <label id="lbl-id-compra" class="lbl-com-ven">Id compra</label>
+                <label id="mostrar-id-compra" class="input-com-ven"></label>
+                <label id="lbl-fecha-compra" class="lbl-com-ven">Fecha compra</label>
+                <label id="mostrar-fecha-compra" class="input-com-ven"></label>            
+
+            </div>
+
+            <div id="titulo-detalle">
+                <h2>Detalle de la compra</h2>
+            </div>
+
+            <div id="tabla-detalle">
+                <table id="tab-detalle">
+                    <tr>
+                        <th>Id articulo</th>
+                        <th>Cantidad</th>
+                        <th>Valor Unitario</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>00001</td>
+                        <td>2</td>
+                        <td>1000</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>00002</td>
+                        <td>3</td>
+                        <td>2000</td>
+                        <td>6000</td>
+
+                    </tr>
+                </table>  
+            </div>
+
+            <div id="botones-mis-comp">
+                <button id="btn-realizar-pago" class="estilo-botones" type="button" >Realizar pago</button>
+                <button id="btn-no-pago" class="estilo-botones" type="button">Cancelar</button>
+            </div>
+
+
+        </div>
+    </section> 
+    <script src="./archivos js/remate.js"></script> 
+</body>
+</html>

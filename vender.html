@@ -20,17 +20,27 @@
                 <button id="btn-buscar">🔍Search</button>
                 <input id="input-buscar" type="text" name="buscar-prod" id="buscar"> 
             </div>
-            <nav class="barra-nav"> 
-                <ul id="list-nav">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="./comprar.html">Comprar</a></li>
-                    <div>
-                        <li><a href="#">Mis compras</a></li>
-                        <img src="./imagenes/carrito-de-compras.png" alt="icon carrito" class="icon-carrito">
-                    </div>
-                </ul>  
-            </nav>
+<!-- contenedor btn-nav contiene el menu y un boton responsive de menu -->
+
+            <div class="btn-nav"> 
+                <label for="check-menu" class="lbl-btn-nav">
+                    <img src="./estilos/menu.svg" alt="">
+                </label>
+                <input type="checkbox" class="check-btn-menu" id="check-menu">
+                <nav class="barra-nav"> 
+                    <ul class="list-nav">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./vender.html">Vender</a></li>
+                        <li><a href="./comprar.html">Comprar</a></li>
+                        <div>
+                            <li><a href="./misCompras.html">Mis compras</a></li>
+                            <img src="./imagenes/carrito-de-compras.png" alt="icon carrito" class="icon-carrito">
+                        </div>
+                    </ul>  
+                </nav>
+    
+            </div>
+
         </section>
 
         <section class="iniciar-registrar" >
@@ -40,44 +50,44 @@
         </section>
     </header>
 
-    <div class="contenedor-pag">
+    <section class="contenedor-pag">
         <div id="left"> </div>
-        <section class="contenedor-venta">
+        <div class="contenedor-venta">
             <div id="encabezado-venta">
                 <h2>Venta de artículo</h2>        
             </div>
 
             <form class="frm-venta" action="">
-                <div class="entrada-venta">
+                
+                <div id="div-input-venta">
+                    <label class="lbl-com-ven" for="id-art-vender">Id articulo</label>
+                    <input class="input-com-ven" type="text" placeholder="Id artículo" id="id-art-vender">
 
-                    <div id="div-lbl-venta">
-                        <label class="lbl-com-ven" for="id-art-vender">Id articulo:</label>
-                        <label class="lbl-com-ven" for="nombre-art-vender">Nombre:</label>
-                        <label class="lbl-com-ven" for="categoria-art-vender">Categoría:</label>
-                        <label class="lbl-com-ven" for="marca-art-vender">Marca:</label>
-                        <label class="lbl-com-ven" for="valor-art-vender">Valor:</label>
-                        <label class="lbl-com-ven" for="vegencia-art-vender">Vigencia del remate:</label>
-                        <label class="lbl-com-ven" for="foto-art-vender">Foto:</label>
-                        <label class="lbl-com-ven" for="descripcion-art-vender">Descripción:</label>
-
-                    </div>
-                    <div id="div-input-venta">
-                        <input class="input-com-ven" type="text" placeholder="Id artículo" id="id-art-vender">
-                        <input class="input-com-ven" type="text" placeholder="Nombre" id="nombre-art-vender">
-                        <select class="input-com-ven" type="text"  id="categoria-art-vender" name="categoria">
-                            <option value="seleccionar">Seleccione categoria</option>
-                            <option value="Tv">Televisores</option>
-                            <option value="Bicicleta">Bicicletas</option>
-                            <option value="Celulares">Celulares</option>
-                        </select>
-                        <input class="input-com-ven" type="text" placeholder="Marca" id="marca-art-vender">
-                        <input class="input-com-ven" type="text" placeholder="Valor" id="valor-art-vender">
-                        <input class="input-com-ven" type="date" placeholder="Vigencia" id="vigencia-art-vender">
-                        <input class="input-com-ven" type="file" accept="image/png,image/jpeg" placeholder="Foto" id="foto-art-vender">
-                        <textarea class="input-com-ven" type="text" placeholder="Descripción" id="descripcion-art" ></textarea>
+                    <label class="lbl-com-ven" for="nombre-art-vender">Nombre</label>
+                    <input class="input-com-ven" type="text" placeholder="Nombre" id="nombre-art-vender">
                         
-            
-                    </div>
+                    <label class="lbl-com-ven" for="categoria-art-vender">Categoría</label>
+                    <select class="input-com-ven" type="text"  id="categoria-art-vender" name="categoria">
+                        <option value="seleccionar">Seleccione categoria</option>
+                        <option value="Tv">Televisores</option>
+                        <option value="Bicicleta">Bicicletas</option>
+                        <option value="Celulares">Celulares</option>
+                    </select>
+                        
+                    <label class="lbl-com-ven" for="marca-art-vender">Marca</label>
+                    <input class="input-com-ven" type="text" placeholder="Marca" id="marca-art-vender">
+                        
+                    <label class="lbl-com-ven" for="valor-art-vender">Valor</label>
+                    <input class="input-com-ven" type="text" placeholder="Valor" id="valor-art-vender">
+                        
+                    <label class="lbl-com-ven" for="vegencia-art-vender">Vigencia del remate</label>
+                    <input class="input-com-ven" type="date" placeholder="Vigencia" id="vigencia-art-vender">
+                        
+                    <label class="lbl-com-ven" for="foto-art-vender">Foto</label>
+                    <input class="input-com-ven" type="file" accept="image/png,image/jpeg" placeholder="Foto" id="foto-art-vender">
+                        
+                    <label class="lbl-com-ven" for="descripcion-art-vender">Descripción</label>
+                    <textarea class="input-com-ven" type="text" placeholder="Descripción" id="descripcion-art" ></textarea>
                     
                 </div>
                 <div id="div-botones-venta">
@@ -85,8 +95,8 @@
                     <button id="btn-ven-salir" class="estilo-botones" type="button">Salir</button>
                 </div>
             </form>
-        </section>
-    </div>
+        </div>
+    </section>
     
 </body>
 </html>

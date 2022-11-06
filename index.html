@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,104 +9,119 @@
     <link rel="shortcut icon" href="./imagenes/favicon.png">
     <title>Remate Connect</title>
 </head>
+
 <body>
     <header class="encabezado">
-        <section class=".contenedor-logo-header" >
-            <img  class="logo" src="./imagenes/logo.png" alt="">
+        <section class=".contenedor-logo-header">
+            <img class="logo" src="./imagenes/logo.png" alt="">
         </section>
 
         <section class="navegar-busqueda">
-            <div class="barra-busqueda">  
+            <div class="barra-busqueda">
                 <button id="btn-buscar">🔍Search</button>
-                <input id="input-buscar" type="text" name="buscar-prod" id="buscar"> 
+                <input id="input-buscar" type="text" name="buscar-prod" id="buscar">
             </div>
-            <nav class="barra-nav"> 
-                <ul id="list-nav">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./vender.html">Vender</a></li>
-                    <li><a href="./comprar.html">Comprar</a></li>
-                    <div>
-                        <li><a href="#">Mis compras</a></li>
-                        <img src="./imagenes/carrito-de-compras.png" alt="icon carrito" class="icon-carrito">
-                    </div>
-                </ul>  
-            </nav>
+            <!-- contenedor btn-nav contiene el menu y un boton responsive de menu -->
+            <div class="btn-nav">
+                <label for="check-menu" class="lbl-btn-nav">
+                    <img src="./estilos/menu.svg" alt="">
+                </label>
+                <input type="checkbox" class="check-btn-menu" id="check-menu">
+                <nav class="barra-nav">
+                    <ul class="list-nav">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./vender.html">Vender</a></li>
+                        <li><a href="./comprar.html">Comprar</a></li>
+                        <div>
+                            <li><a href="./misCompras.html">Mis compras</a></li>
+                            <img src="./imagenes/carrito-de-compras.png" alt="icon carrito" class="icon-carrito">
+                        </div>
+                    </ul>
+                </nav>
+
+            </div>
         </section>
 
-        <section class="iniciar-registrar" >
+        <section class="iniciar-registrar">
             <ul id="list-sesion">
+
+                <label id="btn-ingresar" class="lbl-btn-nav">
+                    <img src="./estilos/user.svg" alt="">
+                </label>
                 <li id="li-iniciar-sesion"><a href="#">Iniciar sesión</a></li>
+
+                <label id="btn-nuevo" class="lbl-btn-nav">
+                    <img src="./estilos/nuevoUser.svg" alt="">
+                </label>
                 <li id="li-crear-cuenta"><a href="#">Crear tu cuenta</a></li>
             </ul>
         </section>
 
     </header>
-    
+
     <section class="contenedor-login" id="cont-login">
         <div id="encabezado-login">
-                <div class="contenedor-logo-modal">
-                    <img class="logo" src="./imagenes/logo.png" alt="">
-                </div>
-                <div class="txt-login">
-                    <p>¡COMPRAR Y VENDER TODO ONLINE!</p>
-                </div>
-                <div class="border-double"></div>
+            <div class="contenedor-logo-modal">
+                <img class="logo" src="./imagenes/logo.png" alt="">
+            </div>
+            <div class="txt-login">
+                <p>¡COMPRAR Y VENDER TODO ONLINE!</p>
+            </div>
+            <div class="border-double"></div>
         </div>
         <form class="frm-login" action="">
-            <div class="entrada">
-                <div id="div-lbl-login">
-                    <label class="lbl-login" for="usuario">Usuario:</label>
-                    <label class="lbl-login" for="contraseña">Contraseña:</label>
 
-                </div>
-                <div id="div-input-login">
-                    <input id="usuario"class="input-login" type="text" placeholder="Usuario">
-                    <input id="contraseña" class="input-login" type="text" placeholder="Contraseña">
+            <div id="div-input-login">
+                <label class="lbl-login" for="usuario">Usuario</label>
+                <input id="usuario" class="input-login" type="text" placeholder="Usuario">
 
-                </div>
+                <label class="lbl-login" for="contraseña">Contraseña</label>
+                <input id="contraseña" class="input-login" type="text" placeholder="Contraseña">
             </div>
+
             <div id="div-botones-login">
                 <button id="btn-acceder-log" class="estilo-botones" type="button">Acceder</button>
                 <button id="btn-salir-log" class="estilo-botones" type="button">Salir</button>
-
             </div>
+
             <div id="div-olvido-contraseña">
                 <a href="#">¿Olvidó su contraseña?</a>
             </div>
         </form>
     </section>
 
-<!-- modal para registrar usuario, se usa la abreviación reg para 
+    <!-- modal para registrar usuario, se usa la abreviación reg para 
     identificarlo
- -->   
+ -->
     <section class="contenedor-reg" id="cont-reg">
         <div id="encabezado-reg">
-                <div class="contenedor-logo-modal">
-                    <img class="logo" src="./imagenes/logo.png" alt="">
-                </div>
-                <div class="txt-login">
-                    <p>¡INGRESA TUS DATOS YA! 👇👇👇</p>
-                </div>
-                <div class="border-double"></div>
-        </div>
-        <form action="">
-            <div class="entrada">
-                <div id="div-lbl-reg">
-                    <label class="lbl-login" for="reg-usuario">Usuario:</label>
-                    <label class="lbl-login" for="reg-contraseña">Contraseña:</label>
-                    <label class="lbl-login" for="reg-contraseña-verfic">Contraseña otra vez:</label>
-                    <label class="lbl-login" for="reg-nombre">Nombre :</label>
-                    <label class="lbl-login" for="reg-apellidos">Apellidos:</label>              
-                </div>
-                <div id="div-input-reg">
-                    <input id="reg-usuario"class="input-login" type="text" placeholder="E-mail">
-                    <input id="reg-contraseña" class="input-login" type="text" placeholder="Contraseña">
-                    <input id="reg-contraseña-verfic" class="input-login" type="text" placeholder="Contraseña">
-                    <input id="reg-nombre" class="input-login" type="text" placeholder="Nombre">
-                    <input id="reg-apellidos" class="input-login" type="text" placeholder="Apellidos">
-                </div>
+            <div class="contenedor-logo-modal">
+                <img class="logo" src="./imagenes/logo.png" alt="">
             </div>
-            <div id="div-botones-login">
+            <div class="txt-login">
+                <p>¡INGRESA TUS DATOS YA! 👇👇👇</p>
+            </div>
+            <div class="border-double"></div>
+        </div>
+        <form action="" id="frm-reg">
+            <div class="entrada">
+                <label class="lbl-login" for="reg-usuario">Usuario</label>
+                <input id="reg-usuario" class="input-login" type="text" placeholder="E-mail">
+
+                <label class="lbl-login" for="reg-contraseña">Contraseña</label>
+                <input id="reg-contraseña" class="input-login" type="text" placeholder="Contraseña">
+
+                <label class="lbl-login" for="reg-contraseña-verfic">Contraseña</label>
+                <input id="reg-contraseña-verfic" class="input-login" type="text" placeholder="Contraseña">
+
+                <label class="lbl-login" for="reg-nombre">Nombre</label>
+                <input id="reg-nombre" class="input-login" type="text" placeholder="Nombre">
+
+                <label class="lbl-login" for="reg-apellidos">Apellidos</label>
+                <input id="reg-apellidos" class="input-login" type="text" placeholder="Apellidos">
+
+            </div>
+            <div id="div-botones-reg">
                 <button id="btn-reg" class="estilo-botones" type="button">Registrar</button>
                 <button id="btn-salir-reg" class="estilo-botones" type="button">Salir</button>
             </div>
@@ -114,11 +130,13 @@
             </div>
         </form>
     </section>
-<!-- Producto que se mostrarán en la interfaz-->
-    <div class="contenedor-pag">
+
+    <!-- Producto que se mostrarán en la interfaz-->
+
+    <section class="contenedor-pag">
         <div id="left"> </div>
-        <section class="contenedor-tarjeta" id="cont-tar" >
-        
+        <section class="contenedor-tarjeta" id="cont-tar">
+
             <div class="tarjeta">
                 <figure>
                     <img src="./imagenes/Tv.PNG">
@@ -147,10 +165,11 @@
                     <h3>Teatro en casa</h3>
                     <p>Características y especificaciones del producto</p>
                     <a href="#">Ofertar</a>
-                </div>           
+                </div>
             </div>
         </section>
-    </div> 
-    <script src="./archivos js/remate.js"></script> 
+    </section>
+    <script src="./archivos js/remate.js"></script>
 </body>
+
 </html>
