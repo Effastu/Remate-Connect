@@ -663,9 +663,9 @@ table {
     }
     .entrada{
         display: grid;
-        width: 168%;
-        grid-template-columns: 70%;
+        grid-template-columns: 80%;
         justify-items: center;
+        justify-content: end;
     }
     
 }
