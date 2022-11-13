@@ -44,10 +44,9 @@
         </section>
 
         <section class="iniciar-registrar" >
-            <ul id="list-sesion">
-                <li id="li-iniciar-sesion"><a href="#">Iniciar sesión</a></li>
-                <li id="li-crear-cuenta"><a href="#">Crear tu cuenta</a></li>
-            </ul>
+            <div>
+                <p>Usuario</p>
+            </div>
         </section>
 
     </header>
@@ -77,24 +76,31 @@
 
             <div id="tabla-detalle">
                 <table id="tab-detalle">
-                    <tr>
-                        <th>Id articulo</th>
-                        <th>Cantidad</th>
-                        <th>Valor Unitario</th>
-                        <th>Total</th>
-                    </tr>
-                    <tr>
+                    <thead>
+                        <tr>
+                            <th>Id articulo</th>
+                            <th>Cantidad</th>
+                            <th>Valor Unitario</th>
+                            <th>Sub Total</th>
+                        </tr>
+    
+                    </thead>
+                    <tr class="filas-tab">
                         <td>00001</td>
                         <td>2</td>
                         <td>1000</td>
                         <td>2000</td>
                     </tr>
-                    <tr>
+                    <tr class="filas-tab">
                         <td>00002</td>
                         <td>3</td>
                         <td>2000</td>
                         <td>6000</td>
 
+                    </tr>
+                    <tr class="filas-tab">
+                        <td id="celda-total" colspan="3">Total</td>
+                        <td>8000</td>
                     </tr>
                 </table>  
             </div>
@@ -107,6 +113,5 @@
 
         </div>
     </section> 
-    <script src="./archivos js/remate.js"></script> 
 </body>
 </html>

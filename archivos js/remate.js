@@ -62,7 +62,7 @@ btnNuevoUser.addEventListener('click', (e)=>{
 
 btnSalirReg.addEventListener('click', (e)=>{
     e.preventDefault();
-    contRegistrarse.remove('mostrar-reg')
+    contRegistrarse.classList.remove('mostrar-reg')
     contHeader.style.display = 'flex';
     contTargetas.style.display = 'flex';
 
