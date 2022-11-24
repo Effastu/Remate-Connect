@@ -221,7 +221,7 @@ a:hover{
 .contenedor-reg{
     
     width: 60%;
-    height: 480px;
+    height: 510px;
     background: white;
     border: 1px solid black;
     border-radius: 10px;
@@ -567,6 +567,7 @@ thead{
     column-gap: 20px;
     margin-top: 40px;
 }
+
 /* -------------------Media query--------------------------------- */
 
 @media only screen and (min-width:320px) and (max-width:768px){

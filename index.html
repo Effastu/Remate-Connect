@@ -69,19 +69,19 @@
             </div>
             <div class="border-double"></div>
         </div>
-        <form class="frm-login" action="">
 
+        <form class="frm-login" action="">
             <div id="div-input-login">
                 <label class="lbl-login" for="usuario">Usuario</label>
-                <input id="usuario" class="input-login" type="text" placeholder="Usuario">
+                <input id="usuario" class="input-login" type="email" placeholder="Usuario" required>
 
                 <label class="lbl-login" for="contraseña">Contraseña</label>
-                <input id="contraseña" class="input-login" type="text" placeholder="Contraseña">
+                <input id="contraseña" class="input-login" type="password" placeholder="Contraseña" required>
             </div>
 
             <div id="div-botones-login">
-                <button id="btn-acceder-log" class="estilo-botones" type="button">Acceder</button>
-                <button id="btn-salir-log" class="estilo-botones" type="button">Salir</button>
+                <button id="btn-acceder-log" class="estilo-botones" type="submit">Acceder</button>
+                <button id="btn-salir-log" class="estilo-botones" type="reset">Salir</button>
             </div>
 
             <div id="div-olvido-contraseña">
@@ -106,24 +106,27 @@
         <form action="" id="frm-reg">
             <div class="entrada">
                 <label class="lbl-login" for="reg-usuario">Usuario</label>
-                <input id="reg-usuario" class="input-login" type="text" placeholder="E-mail">
+                <input id="reg-usuario" class="input-login" type="email" placeholder="E-mail" required>
 
                 <label class="lbl-login" for="reg-contraseña">Contraseña</label>
-                <input id="reg-contraseña" class="input-login" type="text" placeholder="Contraseña">
+                <input id="reg-contraseña" class="input-login" type="password" placeholder="Contraseña" required>
 
                 <label class="lbl-login" for="reg-contraseña-verfic">Contraseña</label>
-                <input id="reg-contraseña-verfic" class="input-login" type="text" placeholder="Contraseña">
+                <input id="reg-contraseña-verfic" class="input-login" type="password" placeholder="Contraseña" required >
 
                 <label class="lbl-login" for="reg-nombre">Nombre</label>
-                <input id="reg-nombre" class="input-login" type="text" placeholder="Nombre">
+                <input id="reg-nombre" class="input-login" type="text" placeholder="Nombre" required>
 
                 <label class="lbl-login" for="reg-apellidos">Apellidos</label>
-                <input id="reg-apellidos" class="input-login" type="text" placeholder="Apellidos">
+                <input id="reg-apellidos" class="input-login" type="text" placeholder="Apellidos" required>
+
+                <label class="lbl-login" for="reg-tel">Celular</label>
+                <input id="reg-tel" class="input-login" type="tel" placeholder="Celular" required>
 
             </div>
             <div id="div-botones-reg">
-                <button id="btn-reg" class="estilo-botones" type="button">Registrar</button>
-                <button id="btn-salir-reg" class="estilo-botones" type="button">Salir</button>
+                <button id="btn-reg" class="estilo-botones" type="submit">Registrar</button>
+                <button id="btn-salir-reg" class="estilo-botones" type="reset">Salir</button>
             </div>
             <div id="div-olvido-contraseña">
                 <p>Bienvenido</p>

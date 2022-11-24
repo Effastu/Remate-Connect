@@ -7,6 +7,8 @@ let contLogin = document.querySelector('#cont-login');
 let contHeader = document.querySelector('.encabezado');
 let contTargetas = document.querySelector('#cont-tar')
 let btnIniciarSesion = document.querySelector('#btn-ingresar');
+let labelUsuario = document.getElementById('usuario');
+let labelRdgistrar = document.getElementById('reg-usuario');
 
 let linkRegistrarUsuario = document.querySelector('#li-crear-cuenta');
 let btnSalirReg = document.querySelector('#btn-salir-reg');
@@ -19,8 +21,10 @@ let btnNuevoUser = document.querySelector('#btn-nuevo');
 linkIniciarSesion.addEventListener('click', (e) => {
     e.preventDefault();
     contLogin.classList.add('mostrar-login');
+
     contHeader.style.display = 'none';
     contTargetas.style.display = 'none';
+    labelUsuario.focus()
 });
 btnIniciarSesion.addEventListener('click', (e) => {
     e.preventDefault();
@@ -47,6 +51,7 @@ btnSalir.addEventListener('click', (e) => {
 linkRegistrarUsuario.addEventListener('click', (e)=>{
     e.preventDefault();
     contRegistrarse.classList.add('mostrar-reg');
+    labelRdgistrar.focus();
     contHeader.style.display = 'none';
     contTargetas.style.display = 'none';
 
