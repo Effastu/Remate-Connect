@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
+    <title>Remate Connect</title>
+</head>
+<body>
+    <header class="encabezado">
+        <section class=".contenedor-logo-header" >
+            <img  class="logo" src="./imagenes/logo.png" alt="">
+        </section>
+
+        <section class="navegar-busqueda">
+            <div class="barra-busqueda">  
+                <button id="btn-buscar">🔍Search</button>
+                <input id="input-buscar" type="text" name="buscar-prod" id="buscar"> 
+            </div>
+            <nav class="barra-nav"> 
+                <ul id="list-nav">
+                    <li><a href="/">inicio</a></li>
+                    <li><a href="/Vender">Vender</a></li>
+                    <li><a href="/Comprar">Comprar</a></li>
+                    <div>
+                        <li><a href="/misCompras">Mis compras</a></li>
+                        <img src="./imagenes/carrito-de-compras.png" alt="icon carrito" class="icon-carrito">
+                    </div>
+                </ul>  
+            </nav>
+        </section>
+
+        <section class="iniciar-registrar" >
+            <ul id="list-sesion">
+                <li id="li-iniciar-sesion"><a href="/Login">Iniciar sesión</a></li>
+                <li id="li-crear-cuenta"><a href="/Registro">Crear tu cuenta</a></li>
+            </ul>
+        </section>
+
+    </header>
+    
+ 
+<!-- Producto que se mostrarán en la interfaz-->
+    <div class="contenedor-pag">
+        <div id="left"> </div>
+        <section class="contenedor-tarjeta" id="cont-tar" >
+        
+            <div class="tarjeta">
+                <figure>
+                    <img src="./imagenes/Tv.PNG">
+                </figure>
+                <div class="contenido-tarjeta">
+                    <h3>Televisor</h3>
+                    <p>Características y especificaciones del producto</p>
+                    <a href="#">Ofertar</a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <figure>
+                    <img src="./imagenes/MiniComp.PNG">
+                </figure>
+                <div class="contenido-tarjeta">
+                    <h3>Mini componente</h3>
+                    <p>Características y especificaciones del producto</p>
+                    <a href="#">Ofertar</a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <figure>
+                    <img src="./imagenes/Teatro.PNG">
+                </figure>
+                <div class="contenido-tarjeta">
+                    <h3>Teatro en casa</h3>
+                    <p>Características y especificaciones del producto</p>
+                    <a href="#">Ofertar</a>
+                </div>           
+            </div>
+        </section>
+    </div> 
+</body>
+</html>

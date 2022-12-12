@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
+    <title>Remate Connect</title>
+</head>
+<body>
+    <header class="encabezado">
+        <section class=".contenedor-logo-header" >
+            <img  class="logo" src="./imagenes/logo.png" alt="">
+        </section>
+
+        
+
+        <section class="iniciar-registrar" >
+            <ul id="list-sesion">
+                <!--<li id="li-iniciar-sesion"><a href="/Login">Iniciar sesión</a></li> -->
+                <li id="li-crear-cuenta"><a href="/Registro">Crear tu cuenta</a></li>
+            </ul>
+        </section>
+
+    </header>
+    
+ 
+    <section class="contenedor-login" id="cont-login">
+        <div id="encabezado-login">
+                <div class="contenedor-logo-modal">
+                    <img class="logo" src="./imagenes/logo.png" alt="">
+                </div>
+                <div class="txt-login">
+                    <p>¡COMPRAR Y VENDER TODO ONLINE!</p>
+                </div>
+                <div class="border-double"></div>
+        </div>
+        <form class="frm-login" action="/Autorizar" method="post">
+            <div class="entrada">
+                <div id="div-lbl-login">
+                    <label class="lbl-login" for="usuario" >Usuario:</label>
+                    <label class="lbl-login" for="contrasena" >Contraseña:</label>
+
+                </div>
+                <div id="div-input-login">
+                    <input name="usuario" id="usuario"class="input-login" type="text" placeholder="Usuario">
+                    <input name="contrasena" id="contrasena" class="input-login" type="text" placeholder="Contraseña">
+
+                </div>
+            </div>
+            <div id="div-botones-login">
+                <button id="btn-acceder-log" class="estilo-botones" type="submit">Acceder</button>
+            </div>
+            <div id="div-olvido-contraseña">
+                <a href="#">¿Olvidó su contraseña?</a>
+            </div>
+        </form>
+        <form class="frm-login" action="/"  method="post"> 
+         <div> 
+            <button id="btn-salir-log" class="estilo-botones" type="submit">Salir</button>
+         </div>
+        </form>
+        
+       
+    </section>
+
+ 
+</body>
+</html>

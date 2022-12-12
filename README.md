@@ -7,3 +7,6 @@ Metodología ágil usada: XP
 Asignatura: MDSI 
 
 Semestre: 2022-2
+
+
+(nombreCliente, apellidoCliente, cedulaCliente, contrasenaCliente, nombreUsuario)

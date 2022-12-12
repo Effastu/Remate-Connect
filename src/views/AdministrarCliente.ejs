@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilos/styles.css">
+  <link rel="shortcut icon" href="./imagenes/favicon.png">
+  <title>Remate Connect</title>
+</head>
+
+
+
+<!-- modal para registrar usuario, se usa la abreviación reg para 
+    identificarlo
+ -->
+<section class="contenedor-reg" id="cont-reg">
+  <div id="encabezado-reg">
+    <div class="contenedor-logo-modal">
+      <img class="logo" src="./imagenes/logo.png" alt="">
+    </div>
+    <div class="txt-login">
+      <p>¡INGRESA TUS DATOS YA! 👇👇👇</p>
+    </div>
+    <div class="border-double"></div>
+  </div>
+  <form action="/registrarseAdmin" method="post">
+    <div class="entrada">
+      <div id="div-lbl-reg">
+        <label class="lbl-login" for="reg-nombre">Nombre :</label>
+        <label class="lbl-login" for="reg-apellidos">Apellidos:</label>
+        <label class="lbl-login" for="reg-apellidos">Cedula:</label>
+        <label class="lbl-login" for="reg-contraseña">Contraseña:</label>
+        <label class="lbl-login" for="reg-contraseña-verfic">Contraseña otra vez:</label>
+        <label class="lbl-login" for="reg-usuario">Usuario:</label>
+
+      </div>
+      <div id="div-input-reg">
+        <input name="nombre" id="reg-nombre" class="input-login" type="text" placeholder="Nombre">
+        <input name="apellido" id="reg-apellidos" class="input-login" type="text" placeholder="Apellidos">
+        <input name="cedula" id="reg-Cedula" class="input-login" type="text" placeholder="Cedula">
+        <input name="contrasena" id="reg-contraseña" class="input-login" type="text" placeholder="Contraseña">
+        <input name="contrasenaVer" id="reg-contraseña-verfic" class="input-login" type="text" placeholder="Contraseña">
+        <input name="correo" id="reg-usuario" class="input-login" type="text" placeholder="E-mail">
+      </div>
+    </div>
+    <div id="div-botones-login">
+      <button id="btn-reg" class="estilo-botones" type="submit">Registrar</button>
+    </div>
+  </form>
+
+
+
+  <div id="tabla-detalle1">
+    <table id="tab-detalle1">
+      <thead>
+        <tr class="filas-tab">
+          <td>n°</td>
+          <td>Name</td>
+          <td>Address</td>
+          <td>Phone</td>
+          <td>contraseña</td>
+          <td>ususario</td>
+          <td>Acceso</td>
+          <td>Actions</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (data) { %>
+          <% for(var i=0; i < data.length; i++) { %>
+            <tr class="filas-tab">
+              <td>
+                <%= (i + 1) %>
+              </td>
+              <td>
+                <%= data[i].nombreCliente %>
+              </td>
+              <td>
+                <%= data[i].apellidoCliente %>
+              </td>
+              <td>
+                <%= data[i].cedulaCliente %>
+              </td>
+              <td>
+                <%= data[i].contrasenaCliente %>
+              </td>
+              <td>
+                <%= data[i].nombreUsuario %>
+              </td>
+              <td>
+                <%= data[i].nivelAcceso %>
+              </td>
+              <td>
+                <a href="/Actualicar/<%= data[i].cedulaCliente %>" class="estilo-botones">Actualizar</a>
+                <a href="/Borrar/<%= data[i].cedulaCliente %>" class="estilo-botones">Borrar</a>
+              </td>
+            </tr>
+            <% } %>
+              <% } %>
+      </tbody>
+    </table>
+  </div>
+
+
+  <form class="frm-login" action="/indexAdministrador" method="get">
+    <div>
+      <button id="btn-salir-log" class="estilo-botones" type="submit">Salir</button>
+    </div>
+  </form>
+</section>
+
+
+</body>
+
+</html>

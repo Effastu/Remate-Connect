@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remate Connect</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
+
+</head>
+<body>
+    <header class="encabezado">
+        <section class=".contenedor-logo-header" >
+            <img  class="logo" src="./imagenes/logo.png" alt="">
+        </section>
+
+        <section class="navegar-busqueda">
+            <div class="barra-busqueda">  
+                <button id="btn-buscar">🔍Search</button>
+                <input id="input-buscar" type="text" name="buscar-prod" id="buscar"> 
+            </div>
+            <nav class="barra-nav"> 
+                <ul id="list-nav">
+                    <li><a href="/index">Inicio</a></li>
+                    <li><a href="/Vender">Vender</a></li>
+                    <li><a href="/Comprar">Comprar</a></li>
+                    <div>
+                        <li><a href="/misCompras">Mis compras</a></li>
+                        <img src="./imagenes/carrito-de-compras.png" alt="icon carrito" class="icon-carrito">
+                    </div>
+                </ul>  
+            </nav>
+        </section>
+
+        <section class="iniciar-registrar" >
+            <div>
+                <p></p>
+                <form class="frm-login" action="/CerrarSeccion"  method="post"> 
+                    <div> 
+                       <button id="btn-salir-log" class="estilo-botones" type="submit">Salir</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <div class="contenedor-pag">
+        <div id="left"> </div>
+        <section class="contenedor-venta">
+            <div id="encabezado-venta">
+                <h2>Venta de artículo</h2>        
+            </div>
+
+            <form class="frm-venta" action="/GuardarProducto" method="post">
+                <div class="entrada-venta">
+
+                    <div id="div-lbl-venta">
+                        <label class="lbl-com-ven" for="id-art-vender">Id articulo:</label>
+                        <label class="lbl-com-ven" for="nombre-art-vender">Nombre:</label>
+                        <label class="lbl-com-ven" for="categoria-art-vender">Categoría:</label>
+                        <label class="lbl-com-ven" for="marca-art-vender">Marca:</label>
+                        <label class="lbl-com-ven" for="foto-art-vender">Foto:</label>
+                        <label class="lbl-com-ven-de" for="descripcion-art-vender">Descripción:</label>
+                        <label class="lbl-com-ven" for="vegenciaIni-art-vender">Fecha de inicio:</label>
+                        <label class="lbl-com-ven" for="vegenciaFin-art-vender">Fecha de Fin:</label>
+                        <label class="lbl-com-ven" for="valor-art-vender">Valor inicial:</label>
+
+                    </div>
+                    <div id="div-input-venta">
+                        <input class="input-com-ven" type="text" placeholder="Id artículo" id="id-art-vender" name="idArticulo">
+                        <input class="input-com-ven" type="text" placeholder="Nombre" id="nombre-art-vender" name="Nombre">
+                        <select class="input-com-ven-se" type="text"  id="categoria-art-vender" name="Categoria">
+                            <option value="0">Seleccione categoria</option>
+                            <option value="1">Electrodoméstico</option>
+                            <option value="2">Calzado</option>
+                            <option value="3">Ropa</option>
+                            <option value="4">Tecnología</option>
+                            <option value="5">Mueble/option>
+                            <option value="6">Decoración</option>
+                            <option value="7">Implementos de cocina</option>
+                            <option value="8">Herramienta</option>
+                            <option value="9">Juguete</option>
+                            <option value="10">Vehículo</option>
+                        </select>
+                        <input class="input-com-ven" type="text" placeholder="Marca" id="marca-art-vender" name="Marca">
+                        <input class="input-com-ven" type="file" accept="image/png,image/jpeg" placeholder="Foto" id="foto-art-vender" name="Foto">
+                        <textarea class="input-com-ven" type="text" placeholder="Descripción" id="descripcion-art" name="Descripcion"></textarea>
+                        <input class="input-com-ven" type="date" placeholder="Vigencia" id="vigencia-art-vender" name="FechaIni">
+                        <input class="input-com-ven" type="date" placeholder="Vigencia" id="vigencia-art-vender" name="FechaFin">
+                        <input class="input-com-ven" type="text" placeholder="Valor" id="valor-art-vender" name="Valor">
+                        
+            
+                    </div>
+                    
+                </div>
+                <div id="div-botones-venta">
+                    <button id="btn-ven-confirmar" class="estilo-botones" type="button" >Confirmar</button>
+                    <button id="btn-ven-salir" class="estilo-botones" type="button">Salir</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>
